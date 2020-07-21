@@ -1,0 +1,426 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: rgba(226, 173, 57, 0.2);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 42.75%;
+  }
+}
+
+@media only screen and (min-width: 1800) {
+  html {
+    font-size: 75%;
+  }
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+span {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.header__title h1 {
+  font-size: 6rem;
+  color: #e2ad39;
+}
+
+.header__title p {
+  font-size: 2rem;
+  color: white;
+}
+
+.section2__title {
+  text-align: center;
+}
+
+.section2__title h3 {
+  font-size: 5rem;
+  color: #e2ad39;
+}
+
+.section2__title span {
+  color: #cccbcb;
+}
+
+.section2__text p {
+  font-size: 2rem;
+  color: #323031;
+}
+
+.section2__nouveautes {
+  margin-top: 4rem;
+}
+
+.section2__nouveautes h3 {
+  font-size: 3rem;
+  color: #e2ad39;
+  text-align: center;
+}
+
+.logo a {
+  color: white;
+  font-size: 3.5rem;
+  line-height: 8rem;
+  padding: 0 10rem;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.checkbtn {
+  font-size: 3rem;
+  color: white;
+  float: right;
+  line-height: 8rem;
+  margin-right: 4rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .checkbtn {
+    display: block;
+  }
+}
+
+#check {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+.section1__card {
+  min-height: 13rem;
+  text-align: center;
+  background-color: white;
+  margin-top: 3rem;
+  box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  transition: all .4s ease-in-out;
+  flex: 1;
+  margin: 3rem;
+}
+
+.section1__card-illustration i {
+  font-size: 6rem;
+  color: #e2ad39;
+}
+
+.section1__card-description p {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+
+.section1__card:hover {
+  transform: scale(1.06);
+  border: 2px solid #e2ad39;
+}
+
+.section2__card {
+  width: 60%;
+  min-height: 6rem;
+  margin: 2rem auto;
+  display: flex;
+}
+
+@media only screen and (max-width: 991px) {
+  .section2__card {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section2__card {
+    width: 60%;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 551px) {
+  .section2__card {
+    width: 80%;
+  }
+}
+
+.section2__card .section2__card-right {
+  width: 100%;
+  min-height: 40rem;
+  background-color: white;
+  border: 1px solid #323031;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section2__card .section2__card-right--illustration img {
+  height: 20rem;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: 2px solid #e2ad39;
+}
+
+.section2__card .section2__card-right--description {
+  text-align: center;
+}
+
+.section2__card .section2__card-right--description h4 {
+  font-size: 3rem;
+  color: #e2ad39;
+}
+
+.section2__card .section2__card-right--description p {
+  font-size: 1.6rem;
+}
+
+.section2__card .section2__card-right--description i {
+  color: #e2ad39;
+}
+
+.section2__card .section2__card-left {
+  width: 100%;
+  min-height: 80rem;
+  background-color: white;
+  border: 1px solid #323031;
+  border-radius: 1rem;
+  margin: 2rem 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .section2__card .section2__card-left {
+    margin: 2rem 0;
+  }
+}
+
+.section2__card .section2__card-left--illustration img {
+  height: 40rem;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: 2px solid #e2ad39;
+}
+
+.section2__card .section2__card-left--description {
+  text-align: center;
+}
+
+.section2__card .section2__card-left--description h4 {
+  font-size: 3rem;
+  color: #e2ad39;
+}
+
+.section2__card .section2__card-left--description p {
+  font-size: 1.6rem;
+}
+
+.section2__card .section2__card-left--description i {
+  color: #e2ad39;
+}
+
+.section2__button {
+  text-align: center;
+}
+
+.section2__button button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: #e2ad39;
+  background: transparent;
+  border: 1px solid #e2ad39;
+  transition: all .3s ease-in-out;
+}
+
+.section2__button button:hover {
+  box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+nav {
+  background-color: rgba(50, 48, 49, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 8rem;
+  z-index: 99999999;
+}
+
+nav ul {
+  float: right;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(50, 48, 49, 0.8);
+    top: 8rem;
+    left: -100%;
+    text-align: center;
+    transition: all .3s ease;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 8rem;
+  margin: 0 .5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul li {
+    display: block;
+    margin: 5rem 0;
+    line-height: 3rem;
+  }
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.7rem;
+  padding: .7rem 1.3rem;
+  border-radius: .3rem;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul li a {
+    font-size: 2rem;
+  }
+}
+
+nav ul li a:hover {
+  background-color: #e2ad39;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul li a:hover {
+    background: none;
+    color: #e2ad39;
+  }
+}
+
+nav .active {
+  background-color: #e2ad39;
+}
+
+@media only screen and (max-width: 800px) {
+  nav .active {
+    background: none;
+    color: #e2ad39;
+  }
+}
+
+.header {
+  background-image: url(../images/akassa-galette-maïs-gombo-crabe-ivorianfood.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.header__title {
+  width: 40%;
+  min-height: 40%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #e2ad39;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 30%;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.header__title--typo {
+  margin-top: 4rem;
+}
+
+#section1 {
+  width: 80%;
+  margin: 0 auto;
+  height: 20rem;
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  #section1 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #section1 {
+    margin: 0;
+    height: 45rem;
+    display: block;
+  }
+}
+
+#section2 {
+  width: 80%;
+  margin: 4rem auto;
+  min-height: 20rem;
+}
+
+#section3 {
+  width: 80%;
+  margin: 4rem auto;
+  background-color: red;
+  min-height: 20rem;
+}
+/*# sourceMappingURL=style.css.map */

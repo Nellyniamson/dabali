@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*:focus{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color:rgba($color-primary,  0.2);
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    @include responsive(tab-land){
+        font-size: 56.25%; // 9px = 1rem; (9/16)*100 = 56.25%
+    }
+
+    @include responsive(tab-port){
+        font-size: 50%; // 8px = 1rem; (8/16)*100 = 50%
+     }
+
+    @include responsive(phone){
+        font-size: 42.75%; // 7px = 1rem; (7/16)*100 = 42.75%
+    }
+
+    @include responsive(big-desktop){
+        font-size: 75%; // 12px = 1rem; (12/16)*100 = 75%
+    }
+
+}

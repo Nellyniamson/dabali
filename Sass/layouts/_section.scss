@@ -1,0 +1,30 @@
+#section1{
+    width: 80%;
+    margin: 0 auto;
+    height: 20rem;
+    display: flex;
+
+    @include responsive(phoneX){
+        width:100%;
+    }
+
+    @include responsive(phone){
+        margin: 0 ;
+        height: 45rem;
+        display: block;
+    }
+}
+
+#section2{
+    width: 80%;
+    margin: 4rem auto;
+    // background-color: red;
+    min-height: 20rem;
+}
+
+#section3{
+    width: 80%;
+    margin: 4rem auto;
+    background-color: red;
+    min-height: 20rem;
+}

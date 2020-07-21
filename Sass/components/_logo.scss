@@ -1,0 +1,14 @@
+.logo{
+    & a{
+        color:$color-white;
+        font-size: 3.5rem;
+        line-height: 8rem;
+        padding: 0 10rem;
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    @include responsive(tab-portN){
+        //padding-left: 5rem;
+    }
+}

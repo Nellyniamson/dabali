@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+p{
+font-family: 'Quicksand', sans-serif;
+}
+
+span{
+font-family: 'Quicksand', sans-serif;
+}
+
+h1 , h2 ,h3 ,h4 ,h5, h6{
+    font-family: 'Dancing Script', cursive;
+}
+
+.header{
+    &__title{
+        & h1{
+            font-size: 6rem;
+            color: $color-primary;
+        }
+        & p{
+            font-size:2rem;
+            color: $color-white;
+        }
+    }
+}
+
+//section 2
+.section2__title{
+    text-align: center;
+    & h3{
+        font-size: 5rem;
+        color: $color-primary;
+    }
+    & span{
+        color: $color-text;
+    }
+}
+
+.section2__text{
+    p{
+        font-size:2rem;
+        color: $color-secondary;
+    }
+}
+
+.section2__nouveautes{
+    margin-top: 4rem;
+    & h3{
+        font-size: 3rem;
+        color: $color-primary;
+        text-align: center;
+    }
+}
