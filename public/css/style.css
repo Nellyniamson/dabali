@@ -5,7 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 *:focus {
@@ -21,12 +22,13 @@ li {
 }
 
 body {
-  background-color: rgba(226, 173, 57, 0.2);
+  background-color: white;
 }
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -87,18 +89,38 @@ h1, h2, h3, h4, h5, h6 {
 
 .section2__title span {
   color: #cccbcb;
-}
-
-.section2__text p {
   font-size: 2rem;
-  color: #323031;
 }
 
 .section2__nouveautes {
-  margin-top: 4rem;
+  margin-top: 10rem;
 }
 
 .section2__nouveautes h3 {
+  font-size: 3rem;
+  color: #e2ad39;
+  text-align: center;
+}
+
+.section3__title h3 {
+  font-size: 5rem;
+  color: #e2ad39;
+  text-align: center;
+}
+
+.sectionblog1_header h1 {
+  font-size: 6rem;
+  color: #e2ad39;
+  text-align: center;
+}
+
+.sectionblog1_header p {
+  font-size: 1.6rem;
+  color: #707070;
+  text-align: center;
+}
+
+.sectionblog2_header h4 {
   font-size: 3rem;
   color: #e2ad39;
   text-align: center;
@@ -144,10 +166,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   background-color: white;
   margin-top: 3rem;
-  box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
+  -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 3rem;
 }
 
@@ -162,7 +188,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section1__card:hover {
-  transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
   border: 2px solid #e2ad39;
 }
 
@@ -170,6 +197,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 60%;
   min-height: 6rem;
   margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -203,7 +232,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .section2__card .section2__card-right--illustration img {
   height: 20rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -244,7 +274,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .section2__card .section2__card-left--illustration img {
   height: 40rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -268,6 +299,162 @@ h1, h2, h3, h4, h5, h6 {
   color: #e2ad39;
 }
 
+.section3__partenaires {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section3__partenaires-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sectionblog1_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionblog1_box h4 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.sectionblog1_box h4 a {
+  color: #323031;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.sectionblog1_box h4 a:hover {
+  color: #e2ad39;
+}
+
+.sectionblog1_box-content {
+  margin-left: 1rem;
+  height: 15rem;
+  margin-top: 6rem;
+  background-image: url(../images/restaurant-cuisine-gastronomie-ivoirienne-ivorianfood-1.jpg);
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  padding: 2rem;
+}
+
+.sectionblog1_box-content .petite-card {
+  width: 15rem;
+  height: 4rem;
+  background-color: #e2ad39;
+  border-radius: 1rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.sectionblog1_box-content .petite-card h6 {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+}
+
+.sectionblog1_box-content .petite-card:hover {
+  background-color: #323031;
+}
+
+.sectionblog1_box-content1 {
+  margin-left: 1rem;
+  height: 15rem;
+  margin-top: 6rem;
+  background-image: url(/public/images/foufou-banane-accompagnc3a9-de-sauce-claire-poisson-cc3b4telettes-de-boeuf-fumc3a9-ivorianfood.jpg);
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  padding: 2rem;
+}
+
+.sectionblog1_box-content1 .petite-card {
+  width: 15rem;
+  height: 4rem;
+  background-color: #e2ad39;
+  border-radius: 1rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.sectionblog1_box-content1 .petite-card h6 {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+}
+
+.sectionblog1_box-content1 .petite-card:hover {
+  background-color: #323031;
+}
+
+.mainBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sectionblog2_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionblog2_part-left {
+  background-color: yellow;
+  height: 38rem;
+  margin-top: 6rem;
+  background-image: url(/public/images/foufou-banane-accompagnc3a9-de-sauce-claire-poisson-cc3b4telettes-de-boeuf-fumc3a9-ivorianfood.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  border-radius: 1rem;
+  -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.sectionblog2_part-right {
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.sectionblog2_part-right h3 {
+  font-size: 3rem;
+  color: #323031;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.sectionblog2_part-right p {
+  font-size: 1.6rem;
+  color: #707070;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.sectionblog2_part-right a button {
+  margin-top: 8rem;
+  padding: 2rem;
+  font-size: 2rem;
+  border: 1px solid #e2ad39;
+  background-color: transparent;
+  color: #e2ad39;
+}
+
 .section2__button {
   text-align: center;
 }
@@ -278,12 +465,68 @@ h1, h2, h3, h4, h5, h6 {
   color: #e2ad39;
   background: transparent;
   border: 1px solid #e2ad39;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
 .section2__button button:hover {
-  box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 4px 13px -2px rgba(0, 0, 0, 0.3);
   background-color: white;
+}
+
+.section2__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section2__circle .section2__circle_Div {
+  width: 20rem;
+  min-height: 20rem;
+  text-align: center;
+  margin-left: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.section2__circle .section2__circle_Div .section2__circle_Div--description h4 {
+  font-size: 5rem;
+  color: #e2ad39;
+}
+
+.section2__circle .section2__circle_Div .section2__circle_Div--description span {
+  font-size: 1.6rem;
+  border: 1px solid #323031;
+  padding: 1rem;
+}
+
+.section2__circle .section2__circle_Div .section2__circle_Div--description span a {
+  color: #323031;
+}
+
+.section2__circle .section2__circle_Div .section2__circle_Div--description span a:hover {
+  text-decoration: underline;
+}
+
+.section2__circle .section2__circle_Div .section2__circle_Div--description i {
+  color: #e2ad39;
+}
+
+.section2__circle .section2__circle_Div .section2__circle_Div--illustration {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.section2__circle .section2__circle_Div .section2__circle_Div--illustration img {
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
 }
 
 nav {
@@ -308,6 +551,7 @@ nav ul {
     top: 8rem;
     left: -100%;
     text-align: center;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
   }
 }
@@ -333,6 +577,7 @@ nav ul li a {
   padding: .7rem 1.3rem;
   border-radius: .3rem;
   text-transform: uppercase;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -379,7 +624,8 @@ nav .active {
   background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid #e2ad39;
   position: absolute;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   top: 50%;
   left: 30%;
   padding: 0 3rem;
@@ -390,10 +636,50 @@ nav .active {
   margin-top: 4rem;
 }
 
+.header-blog {
+  background-image: url(../images/restaurant-cuisine-gastronomie-ivoirienne-ivorianfood-1.jpg);
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-bottom: 5px solid #e2ad39;
+}
+
+.header-blog__title {
+  width: 20%;
+  min-height: 20%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #e2ad39;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 30%;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.header-blog__title--typo {
+  margin-top: 1rem;
+}
+
+.header-blog__title--typo h1 {
+  font-size: 4rem;
+  color: #e2ad39;
+  text-transform: uppercase;
+}
+
+.header-blog__title--typo h1 img {
+  height: 6rem;
+}
+
 #section1 {
   width: 80%;
   margin: 0 auto;
   height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -420,7 +706,32 @@ nav .active {
 #section3 {
   width: 80%;
   margin: 4rem auto;
-  background-color: red;
   min-height: 20rem;
+}
+
+#sectionblog1 {
+  width: 80%;
+  margin: 4rem auto;
+  min-height: 40rem;
+}
+
+#sectionblog2 {
+  width: 80%;
+  margin: 20rem auto;
+  min-height: 40rem;
+}
+
+.footer {
+  margin: 0 auto;
+  min-height: 40rem;
+  background-color: #323031;
+  border-top: 3px solid #e2ad39;
+}
+
+.footer__content {
+  width: 80%;
+  background-color: seagreen;
+  margin: 0 auto;
+  min-height: 40rem;
 }
 /*# sourceMappingURL=style.css.map */

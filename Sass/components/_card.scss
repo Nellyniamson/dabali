@@ -132,4 +132,143 @@
     }
   }
 }
+.section3__partenaires{
+    margin-top: 6rem;
+    display: flex;
+
+    &-1{
+        flex: 1;
+    }
+}
   
+////blog******************************************************************************************************
+
+.sectionblog1_box{
+    display: flex;
+    & h4{
+    font-size: 3rem;
+    margin-top: 2rem;
+
+        & a{
+        color: $color-secondary;
+        transition: all .3s ease;
+
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+
+    &-content{
+    margin-left:1rem ;
+    height: 15rem;
+    margin-top: 6rem;
+    background-image:url(../images/restaurant-cuisine-gastronomie-ivoirienne-ivorianfood-1.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    padding: 2rem;
+
+
+        .petite-card{
+        width: 15rem;
+        height: 4rem;
+        background-color: $color-primary ;
+        border-radius: $border-radius;
+        transition: all .3s ease;
+
+            & h6{
+            font-size: 2.5rem;
+            color: $color-white;
+            text-align: center;
+            }
+
+            &:hover{
+                background-color: $color-secondary;
+            }
+        }
+    }
+
+    &-content1{
+    margin-left:1rem ;
+    height: 15rem;
+    margin-top: 6rem;
+    background-image:url(/public/images/foufou-banane-accompagnc3a9-de-sauce-claire-poisson-cc3b4telettes-de-boeuf-fumc3a9-ivorianfood.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    padding: 2rem;
+
+
+        .petite-card{
+        width: 15rem;
+        height: 4rem;
+        background-color: $color-primary ;
+        border-radius: $border-radius;
+        transition: all .3s ease;
+
+            & h6{
+            font-size: 2.5rem;
+            color: $color-white;
+            text-align: center;
+            }
+
+            &:hover{
+                background-color: $color-secondary;
+            }
+        }
+    }
+}
+
+.mainBox{
+    flex: 1;
+}
+
+.sectionblog2_part{
+    display: flex;
+   
+    &-left{
+    background-color: yellow;
+    height: 38rem;
+    margin-top: 6rem;
+    background-image:url(/public/images/foufou-banane-accompagnc3a9-de-sauce-claire-poisson-cc3b4telettes-de-boeuf-fumc3a9-ivorianfood.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    flex: 2;
+    }
+
+    &-right{
+        text-align: center;
+    flex: 2;
+        & h3{
+        font-size: 3rem;
+        color: $color-secondary;
+        text-align: center;
+        margin-top: 6rem;
+        }
+          & p{
+        font-size:1.6rem;
+        color: $color-grey;
+        text-align: center;
+        margin-top: 4rem;
+        }
+
+        & a{
+            & button{
+                margin-top: 8rem;
+                padding: 2rem;
+                font-size: 2rem;
+                border: 1px solid $color-primary;
+                background-color: transparent;
+                color: $color-primary;
+            }
+        }
+    }
+}

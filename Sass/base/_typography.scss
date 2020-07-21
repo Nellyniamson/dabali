@@ -33,22 +33,50 @@ h1 , h2 ,h3 ,h4 ,h5, h6{
     & h3{
         font-size: 5rem;
         color: $color-primary;
+       
     }
     & span{
         color: $color-text;
+        font-size: 2rem;
     }
 }
 
-.section2__text{
-    p{
-        font-size:2rem;
-        color: $color-secondary;
-    }
-}
 
 .section2__nouveautes{
-    margin-top: 4rem;
+    margin-top: 10rem;
     & h3{
+        font-size: 3rem;
+        color: $color-primary;
+        text-align: center;
+    }
+}
+
+.section3__title{
+    & h3{
+        font-size: 5rem;
+        color: $color-primary;
+        text-align: center;
+    }
+}
+
+//blog******************************************************************************************************
+
+.sectionblog1_header{
+    & h1{
+        font-size: 6rem;
+        color: $color-primary;
+        text-align: center;
+    }
+
+    & p{
+            font-size:1.6rem;
+            color: $color-grey;
+             text-align: center;
+        }
+}
+
+.sectionblog2_header{
+    & h4{
         font-size: 3rem;
         color: $color-primary;
         text-align: center;
