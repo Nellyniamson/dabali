@@ -1,0 +1,48 @@
+.side-bar{
+    width: 30rem;
+    height: 100vh;
+    background-color:rgba($color-secondary,0.6) ;
+    border-right: 3px solid $color-secondary;
+    border-bottom: 3px solid $color-secondary;
+    position: absolute;
+    // top: 35rem;
+    // overflow: visible;
+
+    & h4{
+        font-size: 2rem;
+        margin-left: 2rem;
+        color:$color-primary;
+    }
+
+    &__menu{
+
+        & ul{
+        padding: 2rem;
+
+            & li{
+            padding: 1rem 1.5rem;
+            font-size: 1.8rem;
+            transition: .3s ease;
+            &:hover{
+                border-left: 3px solid $color-primary;
+            }
+
+                & a{
+                color:$color-secondary;
+                transition: all .3s ease;
+                    
+                    &:hover{
+                    color:$color-primary;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*menu*/
+    .border{
+        border-bottom: 1px solid rgb(158, 154, 154);
+    }
+
+}

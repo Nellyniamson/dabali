@@ -77,3 +77,48 @@
     }
 }
 
+//carte **********************************************************************************************************************/
+
+.header-carte{
+    background-image:url(/public/images/maxresdefault.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-bottom: 5px solid $color-primary;
+
+    &__title{
+        min-width: 20%;
+        min-height: 20%;
+        background-color:rgba($color: #000000, $alpha: 0.4);
+        border: 2px solid $color-primary;
+        position: absolute;
+        transform: translate(-50% ,-50%);
+        top: 50%;
+        left: 30%;
+        padding:0 3rem;
+        text-align: center;
+        //clip-path: circle(50% at 50% 51%);
+
+        @include responsive(phoneX){
+            // width: 0rem;
+            //  left: 37%;
+        }
+
+        &--typo{
+            margin-top: 1rem;
+
+             & h1{
+            font-size: 4rem;
+            color: $color-primary;
+            text-transform: uppercase;
+
+                & img{
+                    height: 6rem;
+                }
+            }
+        }
+    }
+}
+
