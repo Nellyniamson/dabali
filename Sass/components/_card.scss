@@ -135,6 +135,7 @@
 .section3__partenaires{
     margin-top: 6rem;
     display: flex;
+    flex-wrap: wrap;
 
     &-1{
         flex: 1;
@@ -145,6 +146,7 @@
 
 .sectionblog1_box{
     display: flex;
+    flex-wrap: wrap;
     & h4{
     font-size: 3rem;
     margin-top: 2rem;
@@ -160,17 +162,24 @@
     }
 
     &-content{
+    width:35rem ;
     margin-left:1rem ;
-    height: 15rem;
     margin-top: 6rem;
     background-image:url(../images/restaurant-cuisine-gastronomie-ivoirienne-ivorianfood-1.jpg);
-    height: 50vh;
+    height: 30vh;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     position: relative;
     padding: 2rem;
+    filter: brightness(50%);
+    transition: all .4s ease-in-out;
 
+    &:hover{
+        filter: brightness(100%);
+        box-shadow: $box-shadow;
+        transform: scale(1.01);
+    }
 
         .petite-card{
         width: 15rem;
@@ -192,18 +201,101 @@
     }
 
     &-content1{
+    width: 35rem;
     margin-left:1rem ;
-    height: 15rem;
     margin-top: 6rem;
     background-image:url(/public/images/foufou-banane-accompagnc3a9-de-sauce-claire-poisson-cc3b4telettes-de-boeuf-fumc3a9-ivorianfood.jpg);
-    height: 50vh;
+    height: 30vh;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     position: relative;
     padding: 2rem;
+    filter: brightness(50%);
+    transition: all .4s ease-in-out;
 
+    &:hover{
+        filter: brightness(100%);
+         box-shadow: $box-shadow;
+        transform: scale(1.01);
+    }
 
+        .petite-card{
+        width: 15rem;
+        height: 4rem;
+        background-color: $color-primary ;
+        border-radius: $border-radius;
+        transition: all .3s ease;
+
+            & h6{
+            font-size: 2.5rem;
+            color: $color-white;
+            text-align: center;
+            }
+
+            &:hover{
+                background-color: $color-secondary;
+            }
+        }
+    }
+     &-content2{
+    width: 35rem;
+    margin-left:1rem ;
+    margin-top: 6rem;
+    background-image:url(/public/images/foufou-banane-accompagnc3a9-de-sauce-claire-poisson-cc3b4telettes-de-boeuf-fumc3a9-ivorianfood.jpg);
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    padding: 2rem;
+    filter: brightness(50%);
+    transition: all .4s ease-in-out;
+
+    &:hover{
+        filter: brightness(100%);
+         box-shadow: $box-shadow;
+        transform: scale(1.01);
+    }
+
+        .petite-card{
+        width: 15rem;
+        height: 4rem;
+        background-color: $color-primary ;
+        border-radius: $border-radius;
+        transition: all .3s ease;
+
+            & h6{
+            font-size: 2.5rem;
+            color: $color-white;
+            text-align: center;
+            }
+
+            &:hover{
+                background-color: $color-secondary;
+            }
+        }
+    }
+    &-content3{
+    width: 35rem;
+    margin-left:1rem ;
+    margin-top: 6rem;
+    background-image:url(/public/images/foufou-banane-accompagnc3a9-de-sauce-claire-poisson-cc3b4telettes-de-boeuf-fumc3a9-ivorianfood.jpg);
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    padding: 2rem;
+    filter: brightness(50%);
+    transition: all .4s ease-in-out;
+
+    &:hover{
+        filter: brightness(100%);
+        box-shadow: $box-shadow;
+        transform: scale(1.01);
+    }
+        
         .petite-card{
         width: 15rem;
         height: 4rem;
@@ -230,9 +322,9 @@
 
 .sectionblog2_part{
     display: flex;
+    flex-wrap: wrap;
    
     &-left{
-    background-color: yellow;
     height: 38rem;
     margin-top: 6rem;
     background-image:url(/public/images/foufou-banane-accompagnc3a9-de-sauce-claire-poisson-cc3b4telettes-de-boeuf-fumc3a9-ivorianfood.jpg);
@@ -246,7 +338,7 @@
 
     &-right{
         text-align: center;
-    flex: 2;
+        flex: 2;
         & h3{
         font-size: 3rem;
         color: $color-secondary;
@@ -273,12 +365,119 @@
     }
 }
 
-////blog******************************************************************************************************
+////carte******************************************************************************************************
 
 
 .presentation-card{
-    width: 80%;
-    margin: 2rem auto;
+    width:86%;
+    margin: 1rem auto;
     min-height: 10rem;
-    background-color:green;
+     background-color:green;
+    
+
+    &__content1{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    &__content1a{
+    width: 30rem;
+    min-height: 40rem;
+    background-color:white;
+    margin-left: 2rem;
+    text-align: center;
+    background-color: rgba($color-primary, 0.2);
+    transition: all .5s ease-in-out;
+    margin-bottom: 1rem;
+    // flex: 1;
+
+    
+
+    &:hover{
+        box-shadow: $box-shadow;
+        transform: scale(1.02);
+    }
+
+        & img{
+            height: 20rem;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        & h4{
+        font-size: 3rem;
+        color: $color-primary;
+        text-align: center;
+        margin-top: 2rem;
+        }
+
+        & p{
+        font-size:1.6rem;
+        color: $color-grey;
+        text-align: center;
+        margin: 2rem 0;
+        }
+
+        & span{
+        font-size:1.6rem;
+        color: red;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        }
+
+        & a{
+            & button{
+            margin: 2rem 0;
+            padding: 1rem;
+            font-size: 2rem;
+            border: 1px solid $color-primary;
+            background-color: transparent;
+            color: $color-primary;
+            cursor: pointer;
+            }
+        }
+    }
+}
+////contact******************************************************************************************************
+
+.contact-form_b{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+   // background-color: green;
+
+    #message{
+    width: 55rem;
+    height: 20rem;
+    padding: 2rem;
+    border:  1px solid $color-primary;
+    }
+
+    &-left{
+        flex: 1;
+
+        & input{
+            width: 55rem;
+            height: 5rem;
+            padding: 2rem;
+            border:  1px solid $color-primary;
+        }
+
+       
+    }
+
+    &-right{
+        flex: 1;
+
+       & button{
+        padding: 2rem 4rem; 
+        font-size: 2rem; 
+        cursor: pointer; border: 1px solid $color-primary;
+        background-color: transparent;
+        color: $color-primary;
+        cursor: pointer;
+       } 
+    }
 }

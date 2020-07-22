@@ -4,12 +4,14 @@
     // background-color: seagreen;
     // text-align: center;
     display: flex;
+    flex-wrap: wrap;
 
     .section2__circle_Div{
         width: 20rem;
         min-height: 20rem;
         text-align: center;
         margin-left: 1rem;
+        margin-bottom: 3rem;
         flex: 1;
 
 

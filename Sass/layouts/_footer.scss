@@ -3,11 +3,18 @@
     min-height: 40rem;
     background-color: $color-secondary;
     border-top: 3px solid $color-primary;
+    text-align: center;
 
     &__content{
         width: 80%;
         background-color: seagreen;
         margin: 0 auto;
         min-height: 40rem;
+
+         .img-trait2{
+        height: 6rem;
+        }
     }
+
+
 }
