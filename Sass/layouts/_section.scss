@@ -3,6 +3,7 @@
     margin: 0 auto;
     height: 20rem;
     display: flex;
+    margin-top: -10rem;
 
     @include responsive(phoneX){
         width:100%;
