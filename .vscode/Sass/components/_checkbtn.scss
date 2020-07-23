@@ -1,0 +1,25 @@
+.checkbtn{
+    font-size:3rem ;
+    color: white;
+    float: right;
+    line-height: 8rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    display: none;
+
+
+    @include responsive(phoneX){
+        display: block;
+    }
+
+}
+
+#check{
+    display: none;
+
+    @include responsive(phoneX){
+        &:checked ~ul {
+            left: 0;
+        }
+    }
+}

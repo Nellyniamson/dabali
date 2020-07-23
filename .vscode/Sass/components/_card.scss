@@ -323,6 +323,10 @@
 .sectionblog2_part{
     display: flex;
     flex-wrap: wrap;
+
+    @include responsive(tab-portN){
+    display: block;
+    }
    
     &-left{
     height: 38rem;
@@ -334,6 +338,19 @@
     border-radius: $border-radius;
     box-shadow: $box-shadow;
     flex: 2;
+
+    @include responsive(tab-portN){
+    width: 60rem;
+    margin-left: 20rem;
+    }
+     @include responsive(phoneX){
+    width: 57rem;
+    margin-left: 17rem;
+    }
+     @include responsive(phone){
+    // width: ;
+    margin-left: 0rem;
+    }
     }
 
     &-right{
@@ -369,10 +386,10 @@
 
 
 .presentation-card{
-    width:86%;
-    margin: 1rem auto;
+     width:90%;
+    margin: 4rem auto;
     min-height: 10rem;
-     background-color:green;
+    
     
 
     &__content1{
@@ -459,9 +476,9 @@
         flex: 1;
 
         & input{
-            width: 40rem;
+            width: 90%;
             height: 5rem;
-            padding: 2rem;
+            padding: 0 2rem;
             border:  1px solid $color-primary;
         }
 

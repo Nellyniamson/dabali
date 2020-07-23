@@ -1,0 +1,68 @@
+nav{
+  background-color:rgba($color-secondary,0.4);
+  position: fixed;
+  width: 100%;
+  height: 8rem;
+  z-index: 99999999;
+  
+
+  & ul{
+      float: right;
+      margin-right: 2rem;
+
+      @include responsive(phoneX){
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:rgba($color-secondary,0.8) ;
+        top: 8rem;
+        left: -100%;
+        text-align: center;
+        transition: all .3s ease;
+      }
+
+      & li{
+        display: inline-block;
+        line-height: 8rem;
+        margin: 0 .5rem;
+        font-family: 'Quicksand', sans-serif;
+
+        @include responsive(phoneX){
+          display: block;
+          margin: 5rem 0;
+          line-height: 3rem;
+        }
+
+        & a{
+            color:$color-white;
+            font-size: 1.7rem;
+            padding: .7rem 1.3rem;
+            border-radius: .3rem;
+            text-transform: uppercase;
+            transition: all .3s ease;
+
+            @include responsive(phoneX){
+              font-size: 2rem;
+            }
+
+            &:hover{
+                background-color: $color-primary;
+
+                @include responsive(phoneX){
+                  background: none;
+                  color:  $color-primary;
+                }
+            }
+        }
+      }
+    }
+
+    .active{
+        background-color: $color-primary;
+
+        @include responsive(phoneX){
+          background: none;
+          color:  $color-primary;
+        }
+    }
+}

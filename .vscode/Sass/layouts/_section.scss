@@ -1,0 +1,108 @@
+#section1{
+    width: 80%;
+    margin: 0 auto;
+    height: 20rem;
+    display: flex;
+    margin-top: -10rem;
+
+    @include responsive(phoneX){
+        width:100%;
+    }
+
+    @include responsive(phone){
+        margin: 0 ;
+        height: 45rem;
+        display: block;
+    }
+}
+
+#section2{
+    width: 80%;
+    margin: 4rem auto;
+    // background-color: red;
+    min-height: 20rem;
+    text-align: center;
+
+    .img-trait{
+        height: 6rem;
+    }
+    
+}
+
+#section3{
+    width: 80%;
+    margin: 4rem auto;
+    min-height: 20rem;
+}
+
+////blog******************************************************************************************************
+
+#sectionblog1{
+    width: 80%;
+    margin: 4rem auto;
+    min-height: 40rem;
+
+    .sectionblog1_header{
+        text-align: center;
+    }
+}
+
+#sectionblog2{
+    width: 80%;
+    margin: 20rem auto;
+    min-height: 40rem;
+
+    @include responsive(tab-portN){
+    width: 92%;
+    }
+}
+
+////blog******************************************************************************************************
+#presentation-Card{
+    //  
+    min-height: 72rem;
+    // background-color: red;
+}
+
+#blogrecettes{
+    width: 50%;
+    margin: 4rem auto;
+    min-height: 40rem;
+    // background-color: red;
+
+    & img{
+        height: 50rem;
+        width: 100%;
+    }
+
+    .blogrecettes__description{
+    font-size:2rem;
+    color: $color-grey;
+    text-align: center;
+    }
+}
+
+////contact******************************************************************************************************
+
+#contact-carte{
+width: 80%;
+margin: 0 auto;
+min-height: 20rem;
+//background-color: red;
+text-align: center;
+
+    .img-trait{
+       height: 6rem; 
+    }
+    .img-trait2{
+       height: 6rem; 
+    }
+}
+
+#contact-form{
+width: 80%;
+margin: 0 auto;
+min-height: 20rem;
+// text-align: center;
+//background-color: yellow;
+}

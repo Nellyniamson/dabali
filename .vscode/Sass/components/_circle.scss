@@ -1,0 +1,71 @@
+.section2__circle{
+    // width: 20rem;
+    // min-height: 20rem;
+    // background-color: seagreen;
+    // text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    .section2__circle_Div{
+        width: 20rem;
+        min-height: 20rem;
+        text-align: center;
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+        flex: 1;
+
+
+        .section2__circle_Div--description{
+        & h4{
+            font-size: 5rem;
+            color: $color-primary;
+        }
+
+        & span{
+            font-size: 1.6rem;
+            border: 1px solid $color-secondary;
+            padding: 1rem;
+           
+           & a{
+                color: $color-secondary;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        & i{
+            color: $color-primary;
+        }
+}
+
+        .section2__circle_Div--illustration{
+        height: 25rem;
+        width: 25rem;
+        border-radius: 50%;
+        margin: 0 auto;
+
+         & img{
+          height: 25rem;
+          object-fit: cover;
+          width: 100%;
+          border-radius:50% ;
+            }   
+        }
+    }
+}
+
+
+
+
+// .section2__circle_Div--illustration{
+//     // background-image: url(../images/Beignet.jpg);
+//     // background-position: top;
+//     // background-size: cover;
+//     & img{
+//           height: 25rem;
+//           object-fit: cover;
+//           width: 100%;
+//           border-radius:50% ;
+//     }    
+// }

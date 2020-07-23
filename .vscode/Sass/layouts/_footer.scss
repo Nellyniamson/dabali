@@ -1,0 +1,62 @@
+.footer{
+    margin: 0 auto;
+    min-height: 40rem;
+    background-color: $color-secondary;
+    border-top: 3px solid $color-primary;
+    text-align: center;
+
+    &__content{
+        width: 80%;
+        //background-color: seagreen;
+        margin: 0 auto;
+        min-height: 40rem;
+
+        p{
+        font-size: 2rem;
+        color: white;
+        }
+
+        & h3{
+        font-size: 3rem;
+        color: $color-primary;
+        text-align: center;
+        margin-top: 2rem;
+        }
+
+         .img-trait2{
+        height: 6rem;
+        }
+
+        &-icons{
+            display: flex;
+            margin: 3rem 40%;
+               //icone dans le footer
+            .icon{        
+            width: 3rem;
+            height: 3rem;
+            background: white;
+            text-align: center;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            margin-left: 1rem;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                background: $color-primary;
+                color: white;
+            }
+                a{
+                color:$color-secondary ;
+                    .fa{
+                    margin-top: .5rem;
+                    }
+
+                &:hover{
+                    color: white;
+                }
+            }
+
+        }
+        }
+    } 
+ }
